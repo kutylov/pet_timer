@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    opacity: .9;
+    border: 1px solid black;
+}
+
+.container>p {
+    font-size: 2rem;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+.timer {
+    display: flex;
+    margin: 0 auto;
+}
+
+.timer>div {
+    height: 200px;
+    margin: 0 10px;
+    width: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.timer>div p+p {
+    font-size: 1.8rem;
+}
