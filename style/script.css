@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.container {
+    background-image: url(/img/visualsofdana-zFKiWB8jGTE-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+}
+
+.timer>div {
+    height: 200px;
+    margin: 0 20px;
+    width: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hours,
+.minutes,
+.seconds {
+    font-size: 100pt;
+    font-weight: 700;
+}
+
+.timer>div p+p {
+    font-size: 30px;
+}
+
+.btn {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    opacity: .8;
+    box-shadow: 1px 1px 5px black;
+}
