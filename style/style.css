@@ -11,23 +11,29 @@
 html,
 body {
     height: 100%;
+    transition: all 1s;
 }
 
 body {
+    background: url(/img/visualsofdana-zFKiWB8jGTE-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
-}
-
-.img {
-    position: absolute;
-    width: 100vw;
-    z-index: -1;
-
+    overflow: hidden;
+    align-self: center;
+    border: 2px solid red;
+    overflow: hidden;
 }
 
 .container {
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     opacity: .9;
     border: 1px solid black;
 }
@@ -36,19 +42,22 @@ body {
     font-size: 2rem;
     padding-bottom: 40px;
     margin: 0 auto;
-    display: block;
+    /* display: block; */
+    width: 100%;
 }
 
 .timer {
+    width: 100%;
     display: flex;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer>div {
     height: 200px;
     margin: 0 10px;
     width: 200px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,4 +74,29 @@ body {
 
 .timer>div p+p {
     font-size: 1.8rem;
+}
+
+@media screen and (max-width:768px){
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .timer>div p+p {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+    .container>p {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    .timer>div {
+        height: 100px;
+    }
 }
