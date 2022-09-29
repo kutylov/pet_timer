@@ -8,7 +8,7 @@ const s = 1000,
     h = m * 60,
     d = h * 24;
 
-setInterval(() => {
+function countFunction() {
     const countDown = new Date(2023, 0, 1).getTime();
     const currentTime = new Date().getTime();
     let distance = countDown - currentTime;
@@ -17,5 +17,7 @@ setInterval(() => {
     hours.textContent = Math.floor((distance % d) / h)
     minutes.textContent = Math.floor((distance % h) / m)
     seconds.textContent = Math.floor((distance % m) / s)
+}
 
-}, 1000)
+countFunction()
+setInterval(countFunction, 1000)
