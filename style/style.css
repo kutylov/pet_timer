@@ -23,6 +23,7 @@ body {
 
 .container {
     margin: 0 auto;
+    margin-bottom: 80px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -35,7 +36,7 @@ body {
 .container>p {
     font-size: 2rem;
     padding-bottom: 10px;
-    width: 100%;
+    /* width: 100%; */
     opacity: .8;
 
 }
@@ -84,7 +85,8 @@ body {
     }
 
     .container {
-        padding: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
     }
 
     .container>p {
